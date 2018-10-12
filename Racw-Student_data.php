@@ -1,5 +1,3 @@
-<?php $page="join";
-$event="std";?>
 <!DOCTYPE html>
 <html lang="en" ng-app>
 
@@ -7,14 +5,10 @@ $event="std";?>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Student Data-RACW</title>
+    <title>Student Data Form</title>
     <link rel="shortcut icon" type="image/ico" href="pics/rota_icon.ico">
     <!--CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/custom-navbar.css">
-    <link rel="stylesheet" href="css/custom-icons_footer.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-1.9.1.js"></script>
@@ -106,20 +100,6 @@ $event="std";?>
 
 <body>
     <!--Navbar-->
-    <?php include_once("header.php")?>
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src="pics/unnamed%20(6).jpg" alt="First slide">
-                <div class="carousel-caption d-none d-md-block">
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <br>
 
     <div class="container">
         <div class="row">
@@ -127,7 +107,7 @@ $event="std";?>
             <div class="col-12 col-md-12 col-lg-8 table-bordered" id="t-border" style="font-family:Adobe Garamond Pro Bold;border-radius:10">
                <br>
                 <center>
-                    <h2 id="studentdatamodallabel" style="font-family:Adobe Garamond Pro Bold;">Student Data- RACW</h2>
+                    <h2 id="studentdatamodallabel" style="font-family:Adobe Garamond Pro Bold;">Student Data- Form</h2>
                 </center>
                 <hr>
                 <form name="sfrm" id="sfrm">
@@ -277,7 +257,7 @@ $event="std";?>
                     <center><acronym>*</acronym><small>Please make sure that all the fields are filled correctly.</small></center>
                     <center style="font-family:Adobe Garamond Pro Bold">
                         <input type="button" class="btn btn-danger" ng-disabled="sfrm.$invalid" value="SUBMIT" id="ssubmit" name="ssubmit">
-                        <span><img src="pics/loading.gif" id="waitt" width="58px" height="50px"></span>
+                        <span>
                     </center>
                     <br>
                     </div>
@@ -287,7 +267,6 @@ $event="std";?>
         </div>
     </div>
     <br>
-    <?php include_once("footer.php") ?>
     <script src="js/angular.min.js"></script>
 </body>
 
